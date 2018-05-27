@@ -7,11 +7,11 @@ pip install flask
 export FLASK_APP=timbers.py  
 flask run   
 
-# flask run
-source venv/bin/activate
-pip install flask    <---  Maybe need to do this step also? 
-export FLASK_APP=timbers.py
-flask run
+# flask run  
+source venv/bin/activate  
+pip install flask    <---  Maybe need to do this step also?   
+export FLASK_APP=timbers.py  
+flask run  
 
 # Branch strategy  
 master will be the reference branch
