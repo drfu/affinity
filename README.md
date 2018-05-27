@@ -1,11 +1,17 @@
 # affinity
 
-# SETUP flask
+# SETUP
 python3 -m venv venv  
 source venv/bin/activate  
 pip install flask  
 export FLASK_APP=timbers.py  
 flask run   
+
+# SETup notes: 
+This will use the extention Flask-WTF for web forms  
+source venv/bin/activate   
+pip install flask-wtf  
+
 
 # flask run  
 source venv/bin/activate  
