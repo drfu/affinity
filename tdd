@@ -1,0 +1,21 @@
+ """
+        # set password REPL test
+        flask shell
+        >>> u = User(username='susan', email='susan@example.com')
+        >>> u.set_password('mypassword')
+        >>> u.check_password('anotherpassword')
+        False
+        >>> u.check_password('mypassword')
+        True
+"""
+
+
+"""
+    flask shell
+    >>> u = User(username='drfu', email='drfu@example.com')
+    >>> u.set_password('cat')
+    >>> db.session.add(u)
+    >>> db.session.commit()
+"""
+
+

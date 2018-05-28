@@ -16,7 +16,7 @@ pip install flask-sqlalchemy
 pip install flask-migrate
 pip install flask-login
 
-# Database stuff:  
+# Stuff:  
 1: DB frontend: Flask-SQLAlchemy - Flask-friendly ORM wrapper to SQLAlchemy
 2: DB backend: SQLite
 3: flask-migrate   ( https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database )
@@ -28,6 +28,7 @@ pip install flask-login
 ...later...
 A:flask db migrate -m "new fields in user model"
 B:flask db upgrade ( steps A and B to tell DB to update itself )
+...Debug mode: Stop the server and "export FLASK_DEBUG=1" ( 'set' for windows ) and restart - now in verbose debug mode 
 
 # flask run  
 source venv/bin/activate  
