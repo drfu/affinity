@@ -25,6 +25,9 @@ pip install flask-login
 5.5: flask db migrate ( Later on this command will be useful to change the shape of the db )
 6: flask db upgrade ( This will detect that there is no sqlite db laying around and create one named 'app.db')
 7: pip install flask-login ( for password hashes ) 
+...later...
+A:flask db migrate -m "new fields in user model"
+B:flask db upgrade ( steps A and B to tell DB to update itself )
 
 # flask run  
 source venv/bin/activate  
