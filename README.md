@@ -8,27 +8,27 @@ export FLASK_APP=timbers.py
 flask run   
 
 # Notes:
-Form handling:  
-This will use the extention Flask-WTF for web forms  
-source venv/bin/activate   
+Form handling:    
+This will use the extention Flask-WTF for web forms    
+source venv/bin/activate      
 pip install flask-wtf  
 pip install flask-sqlalchemy
 pip install flask-migrate
 pip install flask-login
 
 # Stuff:  
-1: DB frontend: Flask-SQLAlchemy - Flask-friendly ORM wrapper to SQLAlchemy
-2: DB backend: SQLite
-3: flask-migrate   ( https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database )
-4: To design the database: http://ondras.zarovi.cz/sql/demo/ 
-5: flask db init ( This will generate the 'migrations' folder which I will now check into github ) 
-5.5: flask db migrate ( Later on this command will be useful to change the shape of the db )
-6: flask db upgrade ( This will detect that there is no sqlite db laying around and create one named 'app.db')
-7: pip install flask-login ( for password hashes ) 
-...later...
-A:flask db migrate -m "new fields in user model"
-B:flask db upgrade ( steps A and B to tell DB to update itself )
-...Debug mode: Stop the server and "export FLASK_DEBUG=1" ( 'set' for windows ) and restart - now in verbose debug mode 
+1: DB frontend: Flask-SQLAlchemy - Flask-friendly ORM wrapper to SQLAlchemy  
+2: DB backend: SQLite  
+3: flask-migrate   ( https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database )   
+4: To design the database: http://ondras.zarovi.cz/sql/demo/   
+5: flask db init ( This will generate the 'migrations' folder which I will now check into github )   
+5.5: flask db migrate ( Later on this command will be useful to change the shape of the db )   
+6: flask db upgrade ( This will detect that there is no sqlite db laying around and create one named 'app.db')   
+7: pip install flask-login ( for password hashes )    
+...later...   
+A:flask db migrate -m "new fields in user model"   
+B:flask db upgrade ( steps A and B to tell DB to update itself )   
+...Debug mode: Stop the server and "export FLASK_DEBUG=1" ( 'set' for windows ) and restart - now in verbose debug mode    
 
 # flask run  
 source venv/bin/activate  
