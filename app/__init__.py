@@ -5,6 +5,8 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
+from flask_mail import Mail
+from flask_bootstrap import Bootstrap
 from config import Config
 
 app = Flask(__name__)
@@ -13,19 +15,10 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 login = LoginManager(app)
 login.login_view = 'login'
+mail = Mail(app)
+bootstrap = Bootstrap(app)
 
 if not app.debug:
-    # To test this, try using a different terminal and use this: python -m smtpd -n -c DebuggingServer localhost:8025 
-    # 
-    #   OR
-    #
-    #export MAIL_SERVER=smtp.googlemail.com
-    #export MAIL_PORT=587
-    #export MAIL_USE_TLS=1
-    #export MAIL_USERNAME=<your-gmail-username>
-    #export MAIL_PASSWORD=<your-gmail-password>
-
-
     if app.config['MAIL_SERVER']:
         auth = None
         if app.config['MAIL_USERNAME'] or app.config['MAIL_PASSWORD']:

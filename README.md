@@ -15,6 +15,8 @@ pip install flask-wtf
 pip install flask-sqlalchemy
 pip install flask-migrate
 pip install flask-login
+pip install flask-mail
+pip install pyjwt
 
 # Stuff:  
 1: DB frontend: Flask-SQLAlchemy - Flask-friendly ORM wrapper to SQLAlchemy  
